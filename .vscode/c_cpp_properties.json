@@ -3,7 +3,13 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "~/libs",
+                "/home/steveli/libs/boost/1.82.0/include",
+                "/usr/include/jsoncpp",
+                "/usr/local/include/bsoncxx/v_noabi",
+                "/usr/local/include/mongocxx/v_noabi",
+                "/usr/local/include/bsoncxx/v_noabi/bsoncxx/third_party/mnmlstc"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

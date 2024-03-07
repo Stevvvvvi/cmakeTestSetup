@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include "swap.h"
+#include <boost/uuid/uuid.hpp>            // uuid class
+#include <boost/uuid/uuid_generators.hpp> // generators
+#include <boost/uuid/uuid_io.hpp>         // streaming operators etc.
+#include <iostream>
 
 
 
@@ -10,5 +14,12 @@ int main() {
     testSwap.run();
     testSwap.printInfo();
     testSwap.processJson();
+    printf("     /\n");
+    printf("    /\n");
+    printf("   /\n");
+    printf("  /\n");
+    printf(" /\n");
+    boost::uuids::uuid uuid = boost::uuids::random_generator()();
+    std::cout << uuid << std::endl;
     return 0;
 }
